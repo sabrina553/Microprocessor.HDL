@@ -106,12 +106,14 @@ Subtraction can be computationally expensive, so this is an express way to save 
 
 ## The Microprocessor
 
-![example](assets/images/image.png)
+![example](assets/images/Layout.png)
 
 Combining all these components together we get the basics of a microprocessor, as a unit the first step is to fetch instructions from memory, the ‘Instruction Queue’ fetches this and outputs to the ‘InstructionPipe,’ this represents the one and only input to the decoder, where it is split into its constituent opcode, Address1, Address2, Address3. The addresses are then passed to the rom, within there is one pipeline stage for addresses one and two. Meaning one extra clock cycle is taken to output to the ALU, and for address three there are 3 pipelines, this delays the writing mechanic until the result is ready to be taken from the ALU, two clock cycles after the other values have been passed to the ALU. Operations on these values are then performed by the ALU, and the result outputted be written back to the rom. In summary the microprocessor Fetches the next instruction, feeds the relevant information to the memory and ALU, the memory passes the correct stored values to the ALU, to be operated on, then written back to memory.
 
 
 ## Challenges
+![waveform](assets/images/Waveform1.png)
+
 One component thus far has been omitted, the controller. Due to the nature of our programme, where address 0 or address 31 are being sequentially written to for the vast majority of runtime. We end up running into a read before write error. 
 
 Notice from the memory description, there is a two-clock cycle gap between numbers being passed to the ALU
@@ -146,7 +148,7 @@ For an individual computation or instruction cycle it takes 10ns, or a latency o
 
 adding no ops would increase time by almost 3x as this method pipelines instructions and utilises forward logic, using no ops, would replace these pipelines instead delaying all but few instructions by an additional two cycles or approximately 60 clock cycles in total or 120ns. The initial time to output the first result is certainly delayed, but thereafter everything is sequential with no expectation regardless of the instruction.
 
-
+![Simulation1](assets/images/Layout.png)
 
 
 
