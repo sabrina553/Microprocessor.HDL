@@ -1,2 +1,16 @@
 log/*
 Simulink/*
+compile/*
+ALU_Main/*
+
+*.cfg
+*.order
+*.do
+*.ini
+*.set
+*.wsw
+*.adf
+*.aws
+*.wsp
+*.awc
+*.asdb
