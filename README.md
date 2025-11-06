@@ -1,4 +1,4 @@
-# ALU-HDL
+# Microprocessor-HDL
 For this project we were tasked with designing, testing, and simulating a microprocessor in VHDL. with 3 component parts: A Decoder, ROM, ALU. In doing so it could calculate a basic athematic equation of addition and subtraction, and store the results. 
 
 VHDL is a description language used to describe hardware from the system level down to logic gates. We will not just be designing a working microprocessor but understanding the concepts of digital design and applying these in practice, highlighting digital logic, computer architecture and the language.
