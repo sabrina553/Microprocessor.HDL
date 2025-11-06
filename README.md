@@ -148,7 +148,7 @@ For an individual computation or instruction cycle it takes 10ns, or a latency o
 
 adding no ops would increase time by almost 3x as this method pipelines instructions and utilises forward logic, using no ops, would replace these pipelines instead delaying all but few instructions by an additional two cycles or approximately 60 clock cycles in total or 120ns. The initial time to output the first result is certainly delayed, but thereafter everything is sequential with no expectation regardless of the instruction.
 
-![Simulation1](assets/images/Layout.png)
+![Simulation1](assets/images/Simulation1.png)
 
 
 
