@@ -1,7 +1,7 @@
-log/*
-Simulink/*
-compile/*
-ALU_Main/*
+log/
+Simulink/
+compile/
+ALU_Main/
 
 *.cfg
 *.order
