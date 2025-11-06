@@ -1,0 +1,2336 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  04:29, 06 January 2024
+#  Simulation has been initialized
+# VSIM: 19 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 74 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 74 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  04:32, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 74 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 74 ns
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  04:36, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 74 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 74 ns
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+run 74 ns
+# KERNEL: stopped at time: 148 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  04:38, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 74 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 74 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  04:39, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Error: COMP96_0015: Part 3 #2/InstructionQueue.vhd : (51, 2): '=>' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => Testbench
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# Error: COMP96_0127: Part 3 #2/InstructionQueue.vhd : (14, 48): Improper aggregate length. Expected length is 31.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+run 71 ns
+# KERNEL: stopped at time: 142 ns
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => Testbench
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# Error: COMP96_0127: Part 3 #2/InstructionQueue.vhd : (14, 48): Improper aggregate length. Expected length is 32.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+run 71 ns
+acom -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Simulation not initialized
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  04:57, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Error: COMP96_0015: Part 3 #2/InstructionQueue.vhd : (47, 2): '=>' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Error: COMP96_0015: Part 3 #2/InstructionQueue.vhd : (47, 2): '=>' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Error: COMP96_0015: Part 3 #2/InstructionQueue.vhd : (47, 2): '=>' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  05:37, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+run 71 ns
+# KERNEL: stopped at time: 142 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  05:45, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+run 71 ns
+# KERNEL: stopped at time: 142 ns
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  05:46, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# RUNTIME: Fatal Error: RUNTIME_0047 ROM.vhd (39): Index -8 out of range (0 to 31).
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: Stopped at time 7 ns + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  05:47, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Error: COMP96_0019: Part 3 #2/controller.vhd : (28, 2): Keyword 'begin' expected.
+# Error: COMP96_0016: Part 3 #2/controller.vhd : (28, 13): Design unit declaration expected.
+# Error: COMP96_0018: Part 3 #2/controller.vhd : (114, 17): Identifier expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.1 [s]
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Error: COMP96_0019: Part 3 #2/controller.vhd : (28, 2): Keyword 'begin' expected.
+# Error: COMP96_0016: Part 3 #2/controller.vhd : (28, 13): Design unit declaration expected.
+# Error: COMP96_0018: Part 3 #2/controller.vhd : (114, 17): Identifier expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  05:49, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Error: COMP96_0019: Part 3 #2/controller.vhd : (28, 2): Keyword 'begin' expected.
+# Error: COMP96_0016: Part 3 #2/controller.vhd : (28, 13): Design unit declaration expected.
+# Error: COMP96_0018: Part 3 #2/controller.vhd : (114, 17): Identifier expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Error: COMP96_0019: Part 3 #2/controller.vhd : (28, 2): Keyword 'begin' expected.
+# Error: COMP96_0016: Part 3 #2/controller.vhd : (28, 13): Design unit declaration expected.
+# Error: COMP96_0018: Part 3 #2/controller.vhd : (114, 17): Identifier expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Error: COMP96_0015: Part 3 #2/controller.vhd : (40, 13): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  05:50, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  05:52, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  06:08, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  06:09, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  06:13, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Error: COMP96_0015: Part 3 #2/InstructionQueue.vhd : (48, 1): '=>' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  06:16, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Error: COMP96_0015: Part 3 #2/InstructionQueue.vhd : (49, 1): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  06:18, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+run 71 ns
+# KERNEL: stopped at time: 142 ns
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  06:19, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Error: COMP96_0015: Part 3 #2/InstructionQueue.vhd : (48, 1): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => Testbench
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# Error: COMP96_0127: Part 3 #2/InstructionQueue.vhd : (14, 48): Improper aggregate length. Expected length is 32.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# Error: COMP96_0127: Part 3 #2/InstructionQueue.vhd : (14, 48): Improper aggregate length. Expected length is 28.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => Testbench
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# Error: COMP96_0127: Part 3 #2/InstructionQueue.vhd : (14, 48): Improper aggregate length. Expected length is 28.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  06:23, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Error: COMP96_0015: Part 3 #2/InstructionQueue.vhd : (47, 2): '=>' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => Testbench
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# Error: COMP96_0367: Part 3 #2/InstructionQueue.vhd : (43, 1): Improper array length (36). Expected length is 32.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work alu_main -2002  "$dsn/src/Part 3 #2/InstructionQueue.vhd" "$dsn/src/Part 3 #2/decoder.vhd" "$dsn/src/Part 3 #2/controller.vhd" "$dsn/src/Part 3 #2/ROM.vhd" "$dsn/src/Part 3 #2/Alu.vhd" "$dsn/src/Part 3 #2/Microprocessor.vhd" "$dsn/src/Part 3 #2/Testbench.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/InstructionQueue.vhd
+# Compile Entity "InstructionQueue"
+# Compile Architecture "Behavioral" of Entity "InstructionQueue"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/decoder.vhd
+# Compile Entity "decoder3"
+# Compile Architecture "simple" of Entity "decoder3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/controller.vhd
+# Compile Entity "controller"
+# Compile Architecture "dataflow" of Entity "controller"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/ROM.vhd
+# Compile Entity "rom3"
+# Compile Architecture "write" of Entity "rom3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Alu.vhd
+# Compile Entity "ALU3"
+# Compile Architecture "Dataflow" of Entity "ALU3"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Microprocessor.vhd
+# Compile Entity "Microprocessor"
+# Compile Architecture "RTL" of Entity "Microprocessor"
+# File: C:/My_Designs/Assignment_/ALU_Main/src/Part 3 #2/Testbench.vhd
+# Compile Entity "Testbench"
+# Compile Architecture "Run" of Entity "Testbench"
+# Top-level unit(s) detected:
+# Entity => Testbench
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+Testbench Testbench Run
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6616 kB (elbread=427 elab2=6049 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Assignment_\ALU_Main\src\wave.asdb
+#  06:34, 06 January 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Assignment_/ALU_Main/src/wave.asdb'.
+run 71 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 1 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g3,  Process: line__32.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 3 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 5 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 7 ns,  Iteration: 0,  Instance: /Testbench/g1/g4,  Process: line__31.
+# KERNEL: stopped at time: 71 ns
+endsim
+# VSIM: Simulation has finished.

@@ -1,0 +1,43 @@
+Active-HDL 13.0.376.8320 2024-01-06 06:34:39
+
+Elaboration top modules:
+Architecture                  Run(Testbench)
+
+
+----------------------------------------------------------------------------------------------------
+Entity           | Architecture | Library  | Info | Compiler Version          | Compilation Options
+----------------------------------------------------------------------------------------------------
+Testbench        | Run          | alu_main |      | 13.0.376.8320 (Windows64) | -O3
+Microprocessor   | RTL          | alu_main |      | 13.0.376.8320 (Windows64) | -O3
+InstructionQueue | Behavioral   | alu_main |      | 13.0.376.8320 (Windows64) | -O3
+decoder3         | simple       | alu_main |      | 13.0.376.8320 (Windows64) | -O3
+controller       | dataflow     | alu_main |      | 13.0.376.8320 (Windows64) | -O3
+rom3             | write        | alu_main |      | 13.0.376.8320 (Windows64) | -O3
+ALU3             | Dataflow     | alu_main |      | 13.0.376.8320 (Windows64) | -O3
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+VHDL Package                    | Library  | Info | Compiler Version          | Compilation Options
+----------------------------------------------------------------------------------------------------
+standard                        | std      |      |                           | <unavailable>
+TEXTIO                          | std      |      | 13.0.376.8320 (Windows64) |  -2019
+std_logic_1164                  | ieee     |      | 13.0.376.8320 (Windows64) |  -2008
+NUMERIC_STD                     | ieee     |      | 13.0.376.8320 (Windows64) |  -2008
+std_logic_arith                 | ieee     |      | 13.0.376.8320 (Windows64) | <unavailable>
+STD_LOGIC_SIGNED                | ieee     |      | 13.0.376.8320 (Windows64) | <unavailable>
+STD_LOGIC_UNSIGNED              | ieee     |      | 13.0.376.8320 (Windows64) | <unavailable>
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Library                         | Comment
+----------------------------------------------------------------------------------------------------
+alu_main                        | None
+ieee                            | Standard IEEE packages library
+std                             | Standard VHDL library
+----------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+Testbench Testbench Run
+
+
+The performance of simulation is reduced. Version Student Edition
