@@ -1,157 +1,215 @@
 # Microprocessor-HDL
-For this project we were tasked with designing, testing, and simulating a microprocessor in VHDL. with 3 component parts: A Decoder, ROM, ALU. In doing so it could calculate a basic athematic equation of addition and subtraction, and store the results. 
 
-VHDL is a description language used to describe hardware from the system level down to logic gates. We will not just be designing a working microprocessor but understanding the concepts of digital design and applying these in practice, highlighting digital logic, computer architecture and the language.
+A small pipelined microprocessor designed, tested and simulated in **VHDL**. It is built from an instruction queue, decoder, controller, ROM (register file) and ALU, and it evaluates an arithmetic expression over 30 stored register values using addition and subtraction.
 
-## Components
-### ALU
+Beyond just getting the right answer, the project is about applying digital design fundamentals in practice: synchronous logic, pipelining, and handling data hazards without stalling the processor.
 
-The ALU, should have two 32-bit inputs, A and B, and a 32-bit output for the result. The result depends on a or b, as well as a 6-bit opcode to indicate the operation the ALU should perform. 
-These opcodes are described below.
+> **Result:** the final design computes `R1 + R2 − R3 − R4 + R5 + R6 − … + R29 + R30 = 236,638` (`0x00039C5E`), writing a result back every clock cycle once the pipeline is full, with no no-ops needed.
 
+![Microprocessor layout](assets/images/Layout.png)
 
-| Operand | Denary Representation | Binary Representation |
-|--------|------|-------------|
-|a + b| 4 |000100|
-|a – b |8| 001000|
-|\|a\| |11| 001011|
-|-a |10 |001010|
-|\|b\| |14 |001110|
-|-b| 6| 000110|
-|a or b |7 |000111|
-|not a |9| 001001|
-|not b |15 |001111|
-|a and b| 2| 000010|
-|a xor b |3| 000011|
+## Contents
 
+- [Architecture](#architecture)
+- [Instruction format](#instruction-format)
+- [ALU](#alu)
+- [Memory (ROM)](#memory-rom)
+- [The programme](#the-programme)
+- [Pipeline and the read-before-write hazard](#pipeline-and-the-read-before-write-hazard)
+- [Performance](#performance)
+- [Limitations and future work](#limitations-and-future-work)
+- [Repository layout](#repository-layout)
+- [Running the simulation](#running-the-simulation)
+- [What I learned](#what-i-learned)
 
+## Architecture
 
-### MEMORY
+| Component | File | Role |
+|-----------|------|------|
+| Instruction Queue | `InstructionQueue.vhd` | Stores the programme and issues one 32-bit instruction per clock cycle |
+| Decoder | `decoder.vhd` | Splits an instruction into opcode and three 5-bit addresses |
+| Controller | `controller.vhd` | Detects data hazards, drives the forwarding signals and pipelines the opcode |
+| ROM | `ROM.vhd` | 32 × 32-bit register store with two read ports, a third address for write-back, and address pipelining |
+| ALU | `Alu.vhd` | 32-bit arithmetic/logic unit with forwarding of its own previous result |
+| Microprocessor | `Microprocessor.vhd` | Top level that wires everything together and exposes debug signals |
+| Testbench | `Testbench.vhd` | 500 MHz clock and a full set of probe signals for the waveform viewer |
 
-The memory takes 3 5-bit inputs, these reference the register number we are looking to take output from the ROM to the ALU, as-well as the register we wish to write our ALU result to. The output to the ALU takes a 32-bit value. Which is expressed in hexadecimal below. 
+The flow of one instruction is: **fetch** from the queue → **decode** into opcode and addresses → **read** two operands from the ROM → **execute** in the ALU → **write back** to the ROM.
 
-| Register Location | Denary Value | Hexadecimal Value |
-|-------------------|--------------|-------------------|
-| 0                 | 0            | 00000000          |
-| 1                 | 70536        | 00011388          |
-| 2                 | 42658        | 0000A6A2          |
-| 3                 | 67141        | 00010645          |
-| 4                 | 25998        | 0000658E          |
-| 5                 | 86650        | 0001527A          |
-| 6                 | 64211        | 0000FAD3          |
-| 7                 | 56067        | 0000DB03          |
-| 8                 | 40159        | 00009CDF          |
-| 9                 | 69723        | 0001105B          |
-| 10                | 28861        | 000070BD          |
-| 11                | 59537        | 0000E891          |
-| 12                | 33726        | 000083BE          |
-| 13                | 23913        | 00005D69          |
-| 14                | 35711        | 00008B7F          |
-| 15                | 85087        | 00014C5F          |
-| 16                | 22853        | 00005945          |
-| 17                | 72191        | 000119FF          |
-| 18                | 87837        | 0001571D          |
-| 19                | 5042         | 000013B2          |
-| 20                | 84884        | 00014B94          |
-| 21                | 22842        | 0000593A          |
-| 22                | 77156        | 00012D64          |
-| 23                | 17363        | 000043D3          |
-| 24                | 87296        | 00015500          |
-| 25                | 45117        | 0000B03D          |
-| 26                | 91034        | 0001639A          |
-| 27                | 73021        | 00011D3D          |
-| 28                | 56444        | 0000DC7C          |
-| 29                | 53900        | 0000D28C          |
-| 30                | 78916        | 00013444          |
-| 31                | 0            | 00000000          |
+## Instruction format
 
+Each instruction is 32 bits wide. Only the top 21 bits are used.
 
+| Bits | Field | Meaning |
+|------|-------|---------|
+| 31 – 26 | `opcode` | ALU operation (6 bits) |
+| 25 – 21 | `A1` | Register for operand `a` |
+| 20 – 16 | `A2` | Register for operand `b` |
+| 15 – 11 | `A3` | Destination register |
+| 10 – 0 | – | Unused (zero) |
 
-### Decoder
-The last component is the Decoder, this takes a 32-bit instruction and splits it into 4 useful numbers, the opcode, address 1, address 2, and address 3.
+In other words, an instruction means **`A1 <opcode> A2 → A3`**. For example, `0x10220000` decodes to opcode `000100` (add), `A1 = 1`, `A2 = 2`, `A3 = 0`, i.e. `R1 + R2 → R0`.
 
-Simply this gives our microprocessor the task
--   A<sub>1</sub> “opcode” A<sub>2</sub>= A<sub>3</sub> 
+## ALU
 
-Where addresses A<sub>1->3 </sub> are 5-bit numbers, referencing positions in the ROM to be operated in the manner the 6-bit opcode states in the ALU.
- The result is then stored in the ROM position A3.
+The ALU has two 32-bit inputs, `a` and `b`, a 6-bit opcode and a 32-bit result. An unknown opcode outputs `0`.
 
+| Operation | Denary | Binary |
+|-----------|:------:|:------:|
+| `a + b` | 4 | `000100` |
+| `a − b` | 8 | `001000` |
+| `\|a\|` | 11 | `001011` |
+| `−a` | 10 | `001010` |
+| `\|b\|` | 14 | `001110` |
+| `−b` | 6 | `000110` |
+| `a or b` | 7 | `000111` |
+| `not a` | 9 | `001001` |
+| `not b` | 15 | `001111` |
+| `a and b` | 2 | `000010` |
+| `a xor b` | 3 | `000011` |
 
-## Task
+The ALU also takes two forwarding flags, `FLa` and `FLb`. When one is set, the corresponding operand is replaced by the ALU's own previous result (see [below](#pipeline-and-the-read-before-write-hazard)).
 
-The instructions are fed from a proprietary component, called Instruction Queue, the purpose of this component is to store the programme to run on the microprocessor. For this assignment this includes 30 instructions, fed one by one on each clock cycle. 
+## Memory (ROM)
 
-The task was to find the result when 
+The ROM holds 32 registers of 32 bits, initialised with the values below. It has:
 
-`R1+R2-R3-R4+R5+R6-.....+R29+R30`
+- two read addresses (`A1`, `A2`), each with **one pipeline stage**, so operands reach the ALU one clock cycle after the addresses are decoded;
+- a third address (`A3`) for write-back, delayed through **pipeline registers** so the write lands when the ALU result is ready, two clock cycles after the operands were passed to the ALU.
 
-My approach to this algorith was to first take all the additions of the overall equation and add them seperately. 
-thus it starts 
-- R<sub>0</sub> + R<sub>1 </sub> = R<sub>0</sub>
-- R<sub>0</sub> + R<sub>2</sub> = R<sub>0</sub>
+<details>
+<summary>Initial register values</summary>
 
-Doing this allows for the same process to be repeated with the subtraction values, where 
+| Register | Denary | Hexadecimal |
+|:--------:|-------:|-------------|
+| 0 | 0 | `00000000` |
+| 1 | 70536 | `00011388` |
+| 2 | 42658 | `0000A6A2` |
+| 3 | 67141 | `00010645` |
+| 4 | 25998 | `0000658E` |
+| 5 | 86650 | `0001527A` |
+| 6 | 64211 | `0000FAD3` |
+| 7 | 56067 | `0000DB03` |
+| 8 | 40159 | `00009CDF` |
+| 9 | 69723 | `0001105B` |
+| 10 | 28861 | `000070BD` |
+| 11 | 59537 | `0000E891` |
+| 12 | 33726 | `000083BE` |
+| 13 | 23913 | `00005D69` |
+| 14 | 35711 | `00008B7F` |
+| 15 | 85087 | `00014C5F` |
+| 16 | 22853 | `00005945` |
+| 17 | 72191 | `000119FF` |
+| 18 | 87837 | `0001571D` |
+| 19 | 5042 | `000013B2` |
+| 20 | 84884 | `00014B94` |
+| 21 | 22842 | `0000593A` |
+| 22 | 77156 | `00012D64` |
+| 23 | 17363 | `000043D3` |
+| 24 | 87296 | `00015500` |
+| 25 | 45117 | `0000B03D` |
+| 26 | 91034 | `0001639A` |
+| 27 | 73021 | `00011D3D` |
+| 28 | 56444 | `0000DC7C` |
+| 29 | 53900 | `0000D28C` |
+| 30 | 78916 | `00013444` |
+| 31 | 0 | `00000000` |
 
-- R<sub>31</sub> + R<sub>3 </sub> = R<sub>31 </sub>
-- R<sub>31</sub> + R<sub>4</sub> = R<sub>31 </sub>
+</details>
 
-R<sub>x</sub> represents the register locations referenced in each instruction, all these operations are performed using addition, until the final where
--  R31 – R0 = R0. 
+## The programme
 
-Subtraction can be computationally expensive, so this is an express way to save time by choosing how we write out the programme.
+The task is to evaluate
 
- We take advantage of the only two registers that do not have a stored value necessary for the actual computation.
+```
+R1 + R2 − R3 − R4 + R5 + R6 − … + R29 + R30
+```
 
- The program is stored in array and on each clock cycle it is iterated and outputs the 32-bit instruction to the decoder.
+which is 30 operands combined by 29 instructions. The Instruction Queue stores these as a constant array and issues one per clock cycle. Once the programme is exhausted it issues an invalid opcode, which the ALU turns into `0`.
 
-## The Microprocessor
+Two programmes were written for this task:
 
-![example](assets/images/Layout.png)
+1. **In-order programme** (final design, `src/Part 3 #2`): runs the expression exactly as written, which alternates between pairs of additions and pairs of subtractions. This is the harder case for the hardware, because consecutive instructions keep reading and writing `R0`.
+2. **Split-accumulator programme** (`src/part 3/programme.vhd`): first adds all the positive terms into `R0` (`R0 + R1 → R0`, `R0 + R2 → R0`, …), then adds all the terms to be subtracted into `R31` (`R31 + R3 → R31`, …), and finally combines the two accumulators with a single subtraction. Subtraction is the more expensive operation, so this uses only one. It works because `R0` and `R31` are the only two registers whose stored value is not needed for the calculation.
 
-Combining all these components together we get the basics of a microprocessor, as a unit the first step is to fetch instructions from memory, the ‘Instruction Queue’ fetches this and outputs to the ‘InstructionPipe,’ this represents the one and only input to the decoder, where it is split into its constituent opcode, Address1, Address2, Address3. The addresses are then passed to the rom, within there is one pipeline stage for addresses one and two. Meaning one extra clock cycle is taken to output to the ALU, and for address three there are 3 pipelines, this delays the writing mechanic until the result is ready to be taken from the ALU, two clock cycles after the other values have been passed to the ALU. Operations on these values are then performed by the ALU, and the result outputted be written back to the rom. In summary the microprocessor Fetches the next instruction, feeds the relevant information to the memory and ALU, the memory passes the correct stored values to the ALU, to be operated on, then written back to memory.
+## Pipeline and the read-before-write hazard
 
+![Waveform showing forwarding](assets/images/Waveform1.png)
 
-## Challenges
-![waveform](assets/images/Waveform1.png)
+Both programmes write to `R0` or `R31` almost every instruction. Because the ROM writes back **two clock cycles** after operands reach the ALU, the next two instructions could read a stale value from the register. This is a classic read-after-write (RAW) data hazard.
 
-One component thus far has been omitted, the controller. Due to the nature of our programme, where address 0 or address 31 are being sequentially written to for the vast majority of runtime. We end up running into a read before write error. 
+The **controller** solves it with forwarding rather than stalling:
 
-Notice from the memory description, there is a two-clock cycle gap between numbers being passed to the ALU
-and being written back to ROM, in this time two more instructions could run, and would be reading an outdated value from the respective register. 
+- It taps the same instruction stream as the decoder and compares the destination address (`A3`) of the instruction in flight against the source addresses (`A1`, `A2`) of the instructions following it.
+- If a source matches, it raises `FLa` or `FLb`, and the ALU substitutes its **previous result** for that operand instead of the (outdated) value coming from the ROM.
+- The ROM keeps writing back on its normal two-cycle delay, so memory stays correct, but the freshest result is always available to the ALU.
+- The opcode is also routed through the controller rather than straight from the decoder, so it is pipelined in step with the operand addresses.
 
-To account for this, the controller adds an additional function, tapping into the aforementioned ‘Instruction Pipe’, like the decoder it splits the instruction into its relevant addresses, and for two instruction cycles it compares the address three, with one and two, if it is found that either address is used sequentially, it will trigger forward logic in the ALU. In which case, the value of a or b of the alu, is replaced with the previous result produced. Meaning the rom will continue to
-take updated results at a two-clock cycle delay, but the previous result is always ready for the ALU, avoiding this error.
+The main advantage is that **no no-ops are needed** and there is no stall/halt signalling. The processor just keeps going with what it has.
 
-Further for this to work, the opcode is fed from the controller rather than the decoder directly to the ALU, as this allows it to be pipelined. Much like Address one and two is in the memory. 
+## Performance
 
-In doing so this solved the equation in the way stated previously, it also worked to solve the equation as it was written in documentation, i.e. alternating between addition and subtraction, every two instruction cycles. Which adds a layer of versatility to the microporcessor, however I elected to continue using the originally stated altered algorithm, as subtraction is computationally expensive compared to addition. 
+![Simulation](assets/images/Simulation1.png)
 
+| Metric | Value |
+|--------|-------|
+| Clock | 500 MHz (2 ns period) |
+| Time to write the final result to memory | 71 ns (about 35 clock cycles; the system is undefined for the first nanosecond) |
+| Latency of a single instruction | 10 ns (5 clock cycles) |
+| Steady-state throughput | 1 instruction / clock cycle |
+| Estimate with no-ops instead of forwarding | about 60 clock cycles (120 ns), almost 3× slower |
 
-However, it would not work for alternating each cycle between addition and subtraction or using the two free write addresses alternatively. This is one limitation of our design that thought needs to be put into the how intstruction set  is designed. Rather than being logic to compile an ideal instruction set to reduce overhead. 
+Without forwarding or no-ops, the design would produce the wrong answer. Forwarding saves roughly a third of the run time compared with inserting no-ops, at the cost of a longer wait for the first result.
 
-That being said Successfully getting the result for two of the three tested algorithms was a big achievement in this project, implementing forward logic and dirty lists made this possible, and were a big challenge to overcome in the design process. Being able to neglect the need for no-ops in this solution vastly improves throughput and the computational speed of the microprocessor. Saving an estimated third of the run time. Meeting the requirments of the task, in an efficient manner.
+## Limitations and future work
 
-If this project were to be improved, I believe problems with the dirty list being too small could
-be easily implemented, and not require much overhead in getting there. Further alternatives
-like a functional no-op or smart re-ordering, would certainly take more time and thorough
-testing, admittedly the design process could have been vastly improved, one important lesson
-was to have signals reading values at any given time in the circuit, implemented from the
-testbench, allowing for faster debugging, too much time was wasted before finally
-implementing this.
+The design passes two of the three test programmes. Forwarding only covers a hazard with the instruction(s) immediately before, so it does **not** handle:
 
+- alternating between addition and subtraction **every** cycle, or
+- alternating between two destination registers (for example `R0` and `R31`) every cycle.
 
-## Performance 
+Ideas for improving it:
 
-As for the overall performance of the microprocessor, it takes 71ns for the result to be written to memory with a clock frequency of 500 MHz - Equivalently one clock cycle is 2 ns, meaning it takes 35 clock cycles (the first nano second, the system is in an undefined state) to complete 30 instructions altogether. 
+- **Extend the dirty list** so the controller checks further back than two instruction cycles. This would also need priority logic for when several in-flight instructions target the same register, and further testing to confirm the ALU correctly prefers the forwarded result over the memory value.
+- **Functional no-ops**, so even the worst-case programme still gives the right answer, regardless of efficiency.
+- **Smart re-ordering** of the instruction stream to turn a problem programme into one the hardware already handles.
 
-For an individual computation or instruction cycle it takes 10ns, or a latency of 5 clock cycles. After which results are written each clock cycle to the memory. This is the minimal time we could achieve this.
+## Repository layout
 
-adding no ops would increase time by almost 3x as this method pipelines instructions and utilises forward logic, using no ops, would replace these pipelines instead delaying all but few instructions by an additional two cycles or approximately 60 clock cycles in total or 120ns. The initial time to output the first result is certainly delayed, but thereafter everything is sequential with no expectation regardless of the instruction.
+```
+Microprocessor.HDL/
+├── assets/images/         Layout, waveform and simulation screenshots
+└── src/
+    ├── part 1/            ALU, ROM and a first top level, each with a testbench
+    ├── part 2/            Adds the decoder
+    ├── part 3/            Adds a programme/instruction source (split-accumulator programme)
+    ├── Part 3 #2/         Final design: queue, decoder, controller, ROM, ALU, top level, testbench
+    └── romtestbench3.bde  Block-design file for the ROM testbench
+```
 
-![Simulation1](assets/images/Simulation1.png)
+The design was built up in stages, so `src/Part 3 #2` is the one to read and run.
 
+## Running the simulation
 
+The sources use the Synopsys `std_logic_signed` / `std_logic_unsigned` packages, so with GHDL you need `-fsynopsys`:
 
+```bash
+cd "src/Part 3 #2"
 
+ghdl -a --std=08 -fsynopsys -frelaxed \
+  Alu.vhd InstructionQueue.vhd ROM.vhd decoder.vhd controller.vhd Microprocessor.vhd Testbench.vhd
+ghdl -e --std=08 -fsynopsys -frelaxed Testbench
+ghdl -r --std=08 -fsynopsys -frelaxed Testbench --stop-time=200ns --vcd=wave.vcd
 
+gtkwave wave.vcd
+```
 
+You will see `CONV_INTEGER` warnings at 1 ns. These are expected: signals are undefined until the first clock edge. Watch `Result_Signal` to see the running total, and `FLA_Signal` / `FLB_Signal` to see forwarding fire. Any other VHDL simulator (ModelSim/Questa, Active-HDL, Vivado) should work too, with `Testbench` as the top level and a 500 MHz clock.
+
+## What I learned
+
+The biggest lesson was to **expose internal signals from the testbench from day one**. Being able to see addresses, pipeline stages and forwarding flags at any point in the circuit made debugging dramatically faster, and I lost too much time before adding them.
+
+## Related
+
+A SystemVerilog re-implementation of this design is in progress in the `microprocessor-verilog` repository.
